@@ -1,0 +1,152 @@
+/*general styling*/
+.container {
+    padding-top: 100px;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    /*text-decoration: underline;*/
+    font-size: 48px;
+    color: #e4640b;
+
+    border-bottom: solid 4px #e4640b;
+    display: inline;
+    padding-bottom: 3px;
+    /*border-bottom: 2px solid #ffb133;*/
+    /*margin-top: 170px;*/
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 16px;
+    margin-bottom: 60px;
+
+}
+
+/*input field styling*/
+
+.inputField {
+    border: none;
+    border-bottom: 1px solid #000000;
+    width: 50%;
+    padding: 5px;
+    color: #5e5e5e;
+    margin-bottom: 35px;
+}
+
+.inputField:hover {
+    background-color: #e7f1cc;
+}
+
+.taskField {
+    background-color: #e7f1cc;
+    margin-bottom: 5px;
+
+}
+
+.list {
+    width: 50%;
+    margin: auto;
+
+}
+
+/*styling checkbox*/
+
+label {
+    font-size: 24px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+/* to hide the checkbox itself */
+input[type=checkbox] + label:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    color: #ffffff;
+
+}
+
+input[type=checkbox] + label:before {
+    content: "\f0c8";
+}
+
+/* unchecked icon */
+input[type=checkbox] + label:before {
+    letter-spacing: 15px;
+}
+
+/* space between checkbox and label */
+
+input[type=checkbox]:checked + label:before {
+    content: "\f14a";
+    color: #97c026;
+
+}
+
+/* checked icon */
+input[type=checkbox]:checked + label:before {
+    letter-spacing: 10px;
+}
+
+/* allow space for check mark */
+
+span.checkbox {
+    display: inline-block;
+}
+
+input[type=checkbox]:checked + label > span {
+    text-decoration: line-through;
+}
+
+div.squaredFour {
+    text-align: left;
+    padding-left: 5px;
+}
+
+.checkbox {
+    color: #5e5e5e;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin: 0;
+
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+/*edit field styling*/
+#editInput {
+    background-color: #e7f1cc;
+    border: none transparent;
+}
+
+#editInput:hover {
+    border: none;
+    border-color: transparent;
+}
+
+/*delete button styling*/
+#cross {
+    border: none;
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: lighter;
+    float: right;
+    /*margin-top: 3px;*/
+}
+
+#wrapper {
+    margin-top: 40px;
+}
+
+/*empty storage styling*/
+.emptyStorage {
+    color: #5e5e5e;
+    text-decoration: underline;
+
+}
